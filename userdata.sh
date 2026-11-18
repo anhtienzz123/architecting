@@ -46,6 +46,15 @@ SyslogIdentifier=demo-app
 WantedBy=multi-user.target
 EOFS
 
+# Install CodeDeploy agent
+dnf install -y ruby wget nodejs22 npm git
+cd /tmp
+wget https://aws-codedeploy-ap-southeast-2.s3.ap-southeast-2.amazonaws.com/latest/install
+chmod +x ./install
+./install auto
+systemctl enable codedeploy-agent
+systemctl start codedeploy-agent
+
 # Start service
 systemctl daemon-reload
 systemctl enable demo-app

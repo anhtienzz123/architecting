@@ -42,8 +42,8 @@ phases:
       # - mv ../specs/appspec-ecs.yaml $CODEBUILD_SRC_DIR/appspec.yml
       # - mv ../specs/taskdef-ecs.json $CODEBUILD_SRC_DIR/taskdef.json
       # - ls -la $CODEBUILD_SRC_DIR
-artifacts:
-  files: 
-   - imageDetail.json
-   - appspec.yml
-   - taskdef.json
+# artifacts:
+#   files: 
+#    - imageDetail.json
+#    - appspec.yml
+#    - taskdef.json

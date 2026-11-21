@@ -4,7 +4,7 @@
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "256",
   "memory": "512",
-  "executionRoleArn": "arn:aws:iam::274595021951:role/ecs-task-execution-role",
+  "executionRoleArn": "arn:aws:iam::746727375531:role/ecs-task-execution-role",
   "runtimePlatform": {
     "cpuArchitecture": "ARM64",
     "operatingSystemFamily": "LINUX"
@@ -24,7 +24,7 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "/ecs/lab14-td",
-          "awslogs-region": "ap-southeast-1",
+          "awslogs-region": "ap-southeast-2",
           "awslogs-stream-prefix": "ecs"
         }
       }

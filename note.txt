@@ -1,0 +1,9 @@
+aws ecs create-service `
+    --cluster ecs-lab14 `
+    --service-name my-svc `
+    --task-definition lab14-td:2 `
+    --deployment-controller type=CODE_DEPLOY `
+    --desired-count 2 `
+    --launch-type FARGATE `
+    --network-configuration "awsvpcConfiguration={subnets=[subnet-059d2f428a632abbd,subnet-0fdda1fc09849f805],securityGroups=[sg-0ec28484919caf3b9],assignPublicIp=DISABLED}" `
+    --load-balancers "targetGroupArn=arn:aws:elasticloadbalancing:ap-southeast-2:746727375531:targetgroup/tg-blue/7b814f25b29e510f,containerName=example,containerPort=3001"

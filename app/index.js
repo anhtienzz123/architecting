@@ -32,7 +32,7 @@ app.get("/", async (req, res) => {
       <title>Application Demo</title>
     </head>
     <body style='background-color: ${bgColor}; color: wheat;text-align: center;'>
-      <h1 style='color: orange'>Hello - Architecting - Welcome to AWS - bluegreen 2</h1>
+      <h1 style='color: orange'>Hello - Architecting - Welcome to AWS - bluegreen 3</h1>
       <h3>Container name: <span style='color: pink'>${containerName}</span></h3>
       <h3>Container's IP Address: <span style='color: pink'>${ip}</span></h3>
       <h3>Application Version: <span style='color: coral'>V${version}</span></h3>
